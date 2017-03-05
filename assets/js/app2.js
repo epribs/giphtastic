@@ -17,7 +17,7 @@ for (var i = 0; i < topics.length; i++) {
 function gifs() {
 	$("#gifs").empty();
 	var btnVal = $(this).attr("data-value").split(" ").join("+");
-	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + btnVal + "&rating=pg-13&limit=12&api_key=dc6zaTOxFJmzC";
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + btnVal + "&rating=pg-13&limit=12&api_key=dc6zaTOxFJmzC";
 	console.log(btnVal);
 	$.ajax({
     url: queryURL,
